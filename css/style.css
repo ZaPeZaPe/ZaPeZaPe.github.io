@@ -1,0 +1,12 @@
+body {
+    background-color: #202225;
+}
+
+.profile {
+    background-color: #18191C;
+    color: #A4A6A9;
+    height: 800px;
+    width: 800px;
+    transform: -50%;
+    translate: -50%;
+}
