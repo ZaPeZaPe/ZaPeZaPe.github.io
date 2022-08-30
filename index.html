@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.95, maximum-scale=3.0">
+    <title>Isaac Luís</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    <body ondragstart="return false;" ondrop="return false;">
+        <div class="layer">
+            Laying over
+        </div>
+        <div class="makeitcenter">
+            <div id="centering" name="Box do perfil" class="profile">
+                <div class="headerSection">
+                    <img src="https://s.gravatar.com/avatar/8e3ac0ea4865394a357f126ba2e159cb?s=800" alt="profilepicture" class="pfp">
+                    <h1>Isaac Luís Silva Santos</h1>
+                    <p>We can't stop learning something new everyday...</p>
+                    <ul>
+                        <li id="buttonInfo" class="buttonActive me-3"><div><a href="javascript:void(0);" onclick="showInfo()">Info</a></div></li>
+                        <li id="buttonActivity" class="me-3"><div><a href="javascript:void(0);" onclick="showActivity()" >Activity</a></div></li>
+                        <li id="buttonContact" class=""><div><a href="javascript:void(0);" onclick="showContact()" >Contact</a></div></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="contentSection">
+                    <div id="infoAbtMe" class="infoAboutMe" style="display: block;">
+                        <strong>ABOUT ME</strong>
+                        <p>
+                            Hello! My name is Isaac and welcome to my website! This site was made with the objective of describing myself 
+                            and showing the knowledge I have and that I'm able to put into practice even without professional experience.
+                            <br/><br/>
+                            For the start I describe myself as a person with a great willpower, flexible to new ways to think and
+                            learn, good programming logic, excellent communication skills and in love with technology and its ways
+                            to change the world.
+                        </p>
+                        <strong>NOTE</strong>
+                        <p>
+                            I may seem like a shy person, but if I start talking to you, you might change your mind.
+                        </p>
+                    </div>
+                    <div id="myActivity" class="myActivity" style="display: none;">
+                        <strong style="float: left">ACTIVITIES ONGOING</strong>
+                        <div id="containers" class="container">
+                            <div class="row">
+                                <div onclick="location.href='https://github.com/ZaPeZaPe/beppo-bot'" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> <img src="img/pycord.png" class="icons"/> Discord Bot (Python - Pycord)
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div onclick="confirmationKaggle()" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> <img src="img/kaggle.png" class="icons"/> Machine Learning (on Kaggle)
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div onclick="location.href='https://github.com/ZaPeZaPe?tab=repositories'" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> ☕ College Works & More
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div onclick="location.href='https://stackblitz.com/edit/agendamento-em-angular'" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> <img src="img/angular.png" class="icons"/> Angular Prototype (for College)
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contactMe" class="contact" style="display: none;">
+                        <strong style="float: left">CONTACTS & SOCIALS</strong>
+                        <div id="containers" class="container">
+                            <div class="row">
+                                <div onclick="location.href='http://web.whatsapp.com'" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> <img src="img/whatsapp.png" class="icons"> +55 71 98235-9080 
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div onclick="location.href='http://www.instagram.com/isaac_l.s_santos'" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> <img src="img/instagram.png" class="icons"> @isaac_l.s_santos
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div onclick="location.href='https://www.linkedin.com/in/isaac-luís-silva-santos-02721220b'" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> <img src="img/linkedin.png" class="icons"> LinkedIn
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div onclick="location.href='http://www.discord.com'" style="cursor: pointer;">
+                                    <div class="col-md pe-2"> <img src="img/discord.png" class="icons"> ZaC#6588
+                                        <svg id="iconBoxArrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
